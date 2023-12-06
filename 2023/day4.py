@@ -29,5 +29,5 @@ def part2(lines):
     return sum(cards.values())
 
 
-print(str(part1(day4)))
-print(str(part2(day4)))
+print("Solution for Part 1: " + str(part1(day4)))
+print("Solution for Part 2: " + str(part2(day4)))
