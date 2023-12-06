@@ -1,0 +1,33 @@
+import re
+
+day4 = open("input/day4input.txt", "r").readlines()
+
+
+def part1(lines):
+    res = 0
+    for line in lines:
+        split = re.split('[:|]', line)
+        winners = split[1].split()
+        nums = split[2].split()
+        winningnums = len(set(nums) & set(winners))
+        if winningnums > 0:
+            res += pow(2, winningnums - 1)
+    return res
+
+
+def part2(lines):
+    cards = {}
+    for idx, line in enumerate(lines):
+        if idx not in cards:
+            cards[idx] = 1
+        split = re.split('[:|]', line)
+        winners = split[1].split()
+        nums = split[2].split()
+        winningnums = len(set(nums) & set(winners))
+        for remaining in range(idx + 1, idx + winningnums + 1):
+            cards[remaining] = cards.get(remaining, 1) + cards[idx]
+    return sum(cards.values())
+
+
+print(str(part1(day4)))
+print(str(part2(day4)))
