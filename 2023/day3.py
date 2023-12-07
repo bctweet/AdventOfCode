@@ -14,8 +14,7 @@ def getcoords(grid):  # Gets and returns a set of coordinates to the first value
                             continue
                         elif not grid[currow][currcol].isnumeric():  # Looking for the number
                             continue
-                        while currcol > 0 and grid[currow][
-                            currcol - 1].isnumeric():  # Traverse grid to find first coordinate of number
+                        while currcol > 0 and grid[currow][currcol - 1].isnumeric():  # Find first coordinate of number
                             currcol -= 1
                         coords.add((currow, currcol))  # Add the coordinates for the first char of a number
     return coords
