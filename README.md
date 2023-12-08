@@ -1,12 +1,12 @@
 # Advent of Code
 This repo houses my solutions for Advent of Code challenges!
 
-To use, simply clone the repo and update the path to your personal input file in the file reading statement of whichever day's code you are attempting to execute.
+To use, simply clone the repo and update the inputpath variable to your personal input file in the file reading statement of whichever day's code you are attempting to execute.
 
-For instance, to run the Day 1 program on my machine, the input path looks like this:
+For instance, to run the Day 1 program on my machine, the inputpath statement looks like this:
 
 ``` python
-day1 = open("input/day1input.txt", "r").readlines()
+inputpath = "input/day1input.txt"
 ```
 
 Once this is done, you can run the file as you would any other python file!
