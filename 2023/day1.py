@@ -83,5 +83,5 @@ def part2(lines):
     return total
 
 
-print("The solution for Part 1 is : " + str(part1(day1)))
+print("The solution for Part 1 is: " + str(part1(day1)))
 print("The solution for Part 2 is: " + str(part2(day1)))
