@@ -1,6 +1,9 @@
 import re
 
-day2 = open("input/day2input.txt", "r").readlines()
+# Update this value to path to your input file
+inputpath = "input/day2input.txt"
+
+day2 = open(inputpath, "r").readlines()
 
 
 def part1(lines):

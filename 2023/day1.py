@@ -1,5 +1,7 @@
 # Update this value to path to your input file
-day1 = open("input/day1input.txt", "r").readlines()
+inputpath = "input/day1input.txt"
+
+day1 = open(inputpath, "r").readlines()
 
 
 # Solution for first part:

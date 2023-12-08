@@ -1,4 +1,7 @@
-day3 = open("input/day3input.txt", "r").read().splitlines()
+# Update this value to path to your input file
+inputpath = "input/day3input.txt"
+
+day3 = open(inputpath, "r").read().splitlines()
 
 
 def getcoords(grid):  # Gets and returns a set of coordinates to the first value in every valid number

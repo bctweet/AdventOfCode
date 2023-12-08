@@ -1,6 +1,9 @@
 import math
 
-day6 = open("input/day6input.txt", "r").readlines()
+# Update this value to path to your input file
+inputpath = "input/day6input.txt"
+
+day6 = open(inputpath, "r").readlines()
 
 t = day6[0].strip().split(":")[1].strip().split()
 d = day6[1].strip().split(":")[1].strip().split()
